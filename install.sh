@@ -19,6 +19,9 @@ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | 
 read -p "What did you want to name your new user?`echo $'\n> '`" NEWUSER
 echo $NEWUSER
 
+echo "adduser $NEWUSER"
+adduser $NEWUSER
+
 # login to that user
 echo "su - $NEWUSER"
 su - $NEWUSER
